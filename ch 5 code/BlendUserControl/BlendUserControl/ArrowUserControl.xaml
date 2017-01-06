@@ -1,0 +1,7 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:BlendUserControl" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="BlendUserControl.ArrowUserControl" mc:Ignorable="d" d:DesignHeight="86.709" d:DesignWidth="144.516">
+    <Grid>
+
+        <ed:BlockArrow Fill="#FFF4F4F5" ed:GeometryEffect.GeometryEffect="Sketch" HorizontalAlignment="Right" Margin="0" Orientation="Right" Stroke="Black" Width="144.516" Height="86.709" VerticalAlignment="Bottom" />
+
+    </Grid>
+</UserControl>

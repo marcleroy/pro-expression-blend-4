@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{203ef5df-3717-4048-bdc5-9ec7a3eb5cd0}</ProjectGuid>
+    <ProjectGuid>{203EF5DF-3717-4048-BDC5-9EC7A3EB5CD0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <DefaultClrNameSpace>BlendUserControl</DefaultClrNameSpace>
@@ -59,6 +59,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RingUserControl.xaml.cs">
+      <DependentUpon>RingUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ArrowUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BubbleThoughsControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +78,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ArrowUserControl.xaml.cs">
+      <DependentUpon>ArrowUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BubbleThoughsControl.xaml.cs">
       <DependentUpon>BubbleThoughsControl.xaml</DependentUpon>
     </Compile>
@@ -78,6 +88,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RingUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

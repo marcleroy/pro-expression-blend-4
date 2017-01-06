@@ -34,5 +34,10 @@ namespace InteractiveTeddyBear
 			blur.Radius = 80;			 
 			rightEar.Effect = blur;
 		}
-	}
+
+        private void RightEye_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            RightEye.Fill = new SolidColorBrush(Colors.Blue);
+        }
+    }
 }

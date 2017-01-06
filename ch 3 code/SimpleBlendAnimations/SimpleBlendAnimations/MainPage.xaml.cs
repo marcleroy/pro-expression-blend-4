@@ -15,7 +15,9 @@ namespace SimpleBlendAnimations
 	public partial class MainPage : UserControl
 	{
 		private Storyboard myStoryboard = null;
-		
+
+        private Storyboard Combination = null;
+
 		public MainPage()
 		{
 			// Required to initialize variables
@@ -46,6 +48,27 @@ namespace SimpleBlendAnimations
 		{
 			// When the SL app loads, grab the story board for later use.
             myStoryboard = (Storyboard)this.Resources["AnimateCircle"];
+            Combination = (Storyboard)this.Resources["AnimateRect"];
 		}
-	}
+
+        //private void StartButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Combination.Begin();
+        //}
+
+        private void PauseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Combination.Pause();
+        }
+
+        private void ResumeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Combination.Resume();
+        }
+
+        private void StopButton_Click(object sender, RoutedEventArgs e)
+        {
+            Combination.Stop();
+        }
+    }
 }

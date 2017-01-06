@@ -8,7 +8,7 @@
 	<!-- NormalBrush is used as the Background for SimpleButton, SimpleRepeatButton -->
 	<LinearGradientBrush x:Key="NormalBrush" EndPoint="0,1" StartPoint="0,0">
 		<GradientStop Color="#EEE" Offset="0.0"/>
-		<GradientStop Color="#FFDC1616" Offset="1.0"/>
+		<GradientStop Color="#FF62ADD1" Offset="1.0"/>
 	</LinearGradientBrush>
 	<LinearGradientBrush x:Key="NormalBorderBrush" EndPoint="0,1" StartPoint="0,0">
 		<GradientStop Color="#CCC" Offset="0.0"/>
@@ -120,7 +120,9 @@
 				</ControlTemplate>
 			</Setter.Value>
 		</Setter>
-	</Style>
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Goudy Stout" />
+    </Style>
 	
 	<Style x:Key="RadioButtonFocusVisual">
 		<Setter Property="Control.Template">

@@ -36,5 +36,11 @@ namespace BlendControlContent
 		{
 			this.Title = "You clicked on the Button!";
 		}
-	}
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Title = "You clicked on the other ...";
+
+        }
+    }
 }

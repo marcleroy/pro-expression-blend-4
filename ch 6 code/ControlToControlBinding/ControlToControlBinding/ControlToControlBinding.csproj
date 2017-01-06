@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6c2d4d3b-8c89-4af6-9605-6a05fbb47270}</ProjectGuid>
+    <ProjectGuid>{6C2D4D3B-8C89-4AF6-9605-6A05FBB47270}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <DefaultClrNameSpace>ControlToControlBinding</DefaultClrNameSpace>
@@ -79,6 +79,7 @@
     <None Include="Application.ico">
       <Visible>false</Visible>
     </None>
+    <None Include="Design\projectGuides.guides" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

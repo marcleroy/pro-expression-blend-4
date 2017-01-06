@@ -21,8 +21,10 @@ namespace ControlToControlBinding
 			byte v = (byte)d;
 			
 			Color color = new Color();
-			color.A = 255;
-			color.G = v;
+            color.A = 255;
+            color.R = 0;
+            color.B = v;
+            color.G = v;
 			
 			return new SolidColorBrush(color);
         }

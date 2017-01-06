@@ -1,0 +1,10 @@
+﻿<Window x:Class="WpfStylesWithBlend.MarcWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfStylesWithBlend" mc:Ignorable="d" Title="MarcWindow" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="button" Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="28.721,28.999,0,0" Style="{DynamicResource MarcButtonStyle}" />
+        <Button x:Name="button2" Content="Button" HorizontalAlignment="Right" Margin="0,28.999,50.333,0" Style="{DynamicResource MarcButtonStyle}" VerticalAlignment="Top" Width="75" />
+        <Slider x:Name="slider" Margin="32.666,0,29.334,78.666" Style="{DynamicResource SimpleSlider}" VerticalAlignment="Bottom" />
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="18.667,76.666,0,0" Style="{DynamicResource SimpleButton}" VerticalAlignment="Top" Width="87.667" Height="37.82" />
+        <Button x:Name="button3" Content="Button" Style="{DynamicResource SimpleButton}" Margin="126.667,113.333,24.666,119.847" />
+
+    </Grid>
+</Window>

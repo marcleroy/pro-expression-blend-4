@@ -1,0 +1,121 @@
+﻿<Window x:Class="WPFAnimationEasingEffects.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WPFAnimationEasingEffects" mc:Ignorable="d" Title="WPF Animation Easing Effects" Height="350" Width="525">
+    <Window.Resources>
+        <Storyboard x:Key="DropAndBounceBall">
+            <DoubleAnimationUsingPath Duration="0:0:4" Source="X" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Rect">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry Figures="M1.4655,2.7045 C58.4655,10.2045 82.9655,37.2045 93.9655,53.7045 104.9655,70.2045 134.07766,105.57168 152.57766,147.57168 166.82383,179.91432 195.63217,262.03783 195.63217,262.03783" />
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+            <DoubleAnimationUsingPath Duration="0:0:4" Source="Y" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Rect">
+                <DoubleAnimationUsingPath.PathGeometry>
+                    <PathGeometry Figures="M1.4655,2.7045 C58.4655,10.2045 82.9655,37.2045 93.9655,53.7045 104.9655,70.2045 134.07766,105.57168 152.57766,147.57168 166.82383,179.91432 195.63217,262.03783 195.63217,262.03783" />
+                </DoubleAnimationUsingPath.PathGeometry>
+            </DoubleAnimationUsingPath>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Rect">
+                <EasingDoubleKeyFrame KeyTime="0" Value="13.24" />
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="343">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut" Bounces="8" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="RubberbandTriangle">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Triangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-92.742820547540717" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-157.41" />
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-172.743" />
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-177.743">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseIn" Oscillations="5" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Triangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="193.28133172027549" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="303.281" />
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="446.615" />
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="447.615">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseIn" Oscillations="5" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Triangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-66.8545" />
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-133.709" />
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-133.709">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseIn" Oscillations="5" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="HoverAndCrashPoly">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Shape">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="263.334">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut" />
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource DropAndBounceBall}" />
+            <BeginStoryboard Storyboard="{StaticResource RubberbandTriangle}" />
+            <BeginStoryboard Storyboard="{StaticResource HoverAndCrashPoly}" />
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*" />
+            <RowDefinition Height="225*" />
+            <RowDefinition Height="43*" />
+        </Grid.RowDefinitions>
+        <Rectangle x:Name="Rect" Fill="#FF6161C5" HorizontalAlignment="Left" Margin="25.757,10,0,8.409" Stroke="Black" Width="54.555" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="13.24" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Path x:Name="Triangle" Fill="#FF49C724" Margin="0,-185.076,173.894,0" Stroke="Black" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Height="38.759" VerticalAlignment="Top" Width="52.72">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="True" StartPoint="15.1699273796501,0.655867672161005">
+                        <LineSegment Point="0.499989672466001,35.3154591926759" />
+                        <LineSegment Point="52.2200232727164,38.103130491753" />
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform X="-92.742820547540717" Y="193.28133172027549" />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="Shape" Data="M406.22267,17.635628 C420.94446,14.90937 435.38779,11.061787 450.8583,16.218623 455.92424,17.907269 464.60174,27.487929 461.48583,36.05668 457.72517,46.398508 456.51556,46.684211 439.52227,46.684211 420.84325,46.684211 409.5712,39.191516 391.34413,45.267206 374.66088,50.828291 373.06938,56.522357 356.62753,41.724696 352.77739,38.259571 348.05806,28.665413 360.87854,24.720648 370.11581,21.878411 375.69544,24.586225 384.96761,25.42915 391.20513,25.996197 397.60218,21.491672&#xD;&#xA;403.38866,19.761134" Fill="#FFEE1446" HorizontalAlignment="Right" Margin="0,9.427,64.484,3.1" Stretch="Fill" Stroke="Black" Width="75.927" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="Land" Data="M1.6680162,303.87045 C12.345952,301.64588 23.576584,301.04744 34.259109,298.91093 38.336433,298.09547 39.911731,295.20284 43.469636,292.53441 50.411408,287.32808 55.693713,284.63777 65.433198,285.44939 83.043908,286.91695 95.328684,302.45344 114.31984,302.45344 142.9246,302.45344 165.73611,285.44939 193.67206,285.44939 222.24907,285.44939 246.99401,300.32794 276.5668,300.32794 314.82705,300.32794 351.85893,276.64085 389.92713,286.15789 419.2863,293.49769 446.52488,297.78557&#xD;&#xA;477.78138,294.65992 494.60975,292.97708 506.3388,303.41093 522.62553,300.53681" Fill="#FF722F16" Margin="-3.291,9.364,-1.667,0.669" Grid.Row="2" Stretch="Fill" Stroke="Black" />
+        <Path x:Name="FallPath" Data="M54,28.5 C111,36 135.5,63 146.5,79.5 157.5,96 184,136 202.5,178 216.74617,210.34265 240,304.5 240,304.5" HorizontalAlignment="Left" Margin="54,-22.5,0,13.5" Stretch="Fill" Stroke="Black" Width="187" Grid.Row="1" Grid.RowSpan="2" Visibility="Hidden" />
+
+    </Grid>
+</Window>

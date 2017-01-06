@@ -1,13 +1,7 @@
-﻿<Window
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:local="clr-namespace:BlendUserControl"
-	x:Class="BlendUserControl.MainWindow"
-	x:Name="Window"
-	Title="MainWindow"
-	Width="640" Height="480">
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:BlendUserControl" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="BlendUserControl.MainWindow" x:Name="Window" Title="MainWindow" Width="640" Height="480">
 
-	<Grid x:Name="LayoutRoot">
-		<local:BubbleThoughsControl HorizontalAlignment="Left" Height="107" Margin="42,39,0,0" VerticalAlignment="Top" Width="233"/>
-	</Grid>
+    <Grid x:Name="LayoutRoot">
+        <local:BubbleThoughsControl HorizontalAlignment="Left" Height="107" Margin="54.387,53.039,0,0" VerticalAlignment="Top" Width="233" />
+        <local:RingUserControl Height="Auto" Width="Auto" Margin="290.815,212.77,221.184,116.229" d:LayoutOverrides="Width, Height" />
+    </Grid>
 </Window>

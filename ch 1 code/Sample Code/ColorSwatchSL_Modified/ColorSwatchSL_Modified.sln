@@ -1,13 +1,30 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ColorSwatchSLSite", "ColorSwatchSLSite\", "{7b42b057-6cc4-46ef-b253-63f371362f7d}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ColorSwatchSLSite", "ColorSwatchSLSite\", "{7B42B057-6CC4-46EF-B253-63F371362F7D}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50876"
+		Debug.AspNetCompiler.PhysicalPath = "ColorSwatchSLSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50876\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50876"
+		Release.AspNetCompiler.PhysicalPath = "ColorSwatchSLSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50876\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50876"
 		ProjOutputReferences = "{55407c0d-24bd-4c78-ae6b-aa5bf9e08333}|ClientBin|false;"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorSwatchSL", "ColorSwatchSL\ColorSwatchSL.csproj", "{55407c0d-24bd-4c78-ae6b-aa5bf9e08333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorSwatchSL", "ColorSwatchSL\ColorSwatchSL.csproj", "{55407C0D-24BD-4C78-AE6B-AA5BF9E08333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +34,14 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B42B057-6CC4-46EF-B253-63F371362F7D}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{55407C0D-24BD-4C78-AE6B-AA5BF9E08333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55407C0D-24BD-4C78-AE6B-AA5BF9E08333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55407C0D-24BD-4C78-AE6B-AA5BF9E08333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55407C0D-24BD-4C78-AE6B-AA5BF9E08333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

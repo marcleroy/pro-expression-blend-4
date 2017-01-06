@@ -1,21 +1,25 @@
-﻿<Window
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	x:Class="Transformations.MainWindow"
-	x:Name="Window"
-	Title="MainWindow"
-	Width="640" Height="480">
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Transformations.MainWindow" x:Name="Window" Title="MainWindow" Width="640" Height="480">
 
-	<Grid x:Name="LayoutRoot">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="0.242*"/>
-			<RowDefinition Height="0.758*"/>
-		</Grid.RowDefinitions>
-		<StackPanel Margin="0,0,8,6.964">
-			<Button x:Name="btnSkew" Content="Skew" Width="100" Margin="0,0,0,10" Click="btnSkew_Click"/>
-			<Button x:Name="btnRotate" Content="Rotate" Width="100" Margin="0,0,0,10" Click="btnRotate_Click"/>
-			<Button x:Name="btnFlip" Content="Flip" Width="100" Margin="0,0,0,10" Click="btnFlip_Click"/>
-		</StackPanel>
-		<Path x:Name="myShape" Data="M132,166 C163.90449,190.12291 173.17357,169.39138 217,160 227.62491,157.72323 260.42313,148.33088 268,165 272.21812,174.27987 268.22887,201 284,201 323.03306,201 332.48309,164.10387 366,206 386.99154,232.23943 371.07418,238.46909 413,221 436.40369,211.24846 454.95645,198.3043 480,215 497.02038,226.34692 500.65884,242.90298 511,261 520.31477,277.30084 524.10711,290.75007&#xd;&#xa;515,312 506.64415,331.49699 492.02969,342.66172 466,347 440.52566,351.24572 417.32321,360.55387 390,356 372.95038,353.1584 364.37272,330.34318 347,326 322.68073,319.92018 319.37044,334.62956 299,355 289.23813,364.76187 277.97688,377.98266 258,363 243.00826,351.75619 230.13981,346.41943 224,328 190.79757,321.35951 162.28748,340.1425 128,347 114.86194,349.62761&#xd;&#xa;112.99816,351.98898 109,328 104.36132,300.16791 95.599196,287.52064 125,264 141.01726,251.18619 165.31477,259 188,259 200.33333,259 212.66667,259 225,259 237.78679,259 246.82709,269.29323 260,266 271.57689,263.10578 281.82342,247.41171 249,231 221.25811,217.12905 215.36685,226 185,226 159.14292,226 152.49819,223.37364 132,208&#xd;&#xa;121.53332,200.14999 123,200.05781 123,184 123,169.16736 122.60302,177.35385 137,170" Fill="#FF2B2BDE" Margin="104.084,48.341,102.791,71.242" Grid.Row="1" Stretch="Fill" Stroke="#FFD61A1A" StrokeThickness="9"/>
-	</Grid>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="128*" />
+            <RowDefinition Height="321*" />
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0,0,8,6.008" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <Button x:Name="btnSkew" Content="Skew" Width="100" Margin="0,0,0,10" Click="btnSkew_Click" />
+            <Button x:Name="btnRotate" Content="Rotate" Width="100" Margin="0,0,0,10" Click="btnRotate_Click" />
+            <Button x:Name="btnFlip" Content="Flip" Margin="0,0,0,10" Click="btnFlip_Click" Width="100" />
+            <Button x:Name="btnReset" Content="Reset" Margin="0" Click="btnReset_Click" Width="100" />
+        </StackPanel>
+        <Path x:Name="myShape" Data="M190.2003,233.20927 C176.8902,231.37339 168.45344,229.73754 155.76084,222.6861 140.61795,214.27339 136.6278,202.20557 136.6278,180.59342 136.6278,161.93406 213.19624,157.1736 248.55605,174.85351 283.58002,192.3655 302.43544,234.80219 343.26457,239.90583 386.91785,245.36249 402.23101,215.46709 440.84305,202.59641 458.70473,196.64252 467.25739,194.92331 487.71898,202.59641 503.2665,208.42673 513.40256,215.91903 520.24514,234.16592 525.09905,247.10967 528.51616,258.57394&#xD;&#xA;524.07175,273.38864 518.82637,290.87325 512.97545,299.84279 494.41555,309.74141 457.5722,329.39119 410.36054,301.93879 376.74738,325.04783 360.565,336.17322 345.93417,347.12778 330.8281,359.48729 318.72965,369.38603 306.42387,375.11474 290.64873,378.62033 271.74087,382.82208 265.21594,379.85536 245.6861,372.88042 227.90006,366.52826 222.74142,365.03667 216.0299,343.22422 208.67854,319.33232 211.93759,331.11986 227.50972,311.65471 240.67825,295.19404&#xD;&#xA;263.95393,292.79603 253.33931,260.95217 248.0644,245.12744 173.21442,277.98512 150.02093,282.95516 140.52731,284.9895 133.2694,286.19149 123.23468,286.78176 110.65587,287.52169 99.722456,287.29653 87.838565,281.04185 70.085009,271.69788 67.748879,270.50267 67.748879,244.68909 67.748879,227.328 77.294338,215.16052 112.71151,230.33931 130.12575,237.80256 140.38235,243.73244 160.5441,243.73244 176.39839,243.73244 187.60962,258.0406 191.15695,233.20927&#xD;&#xA;190.83807,233.20927 190.51918,233.20927 190.2003,233.20927 z" Fill="#FF23664B" Margin="63.749,63.815,100.865,63.444" Grid.Row="1" Stretch="Fill" Stroke="#FF1A67D6" StrokeThickness="9" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1" />
+                    <SkewTransform AngleY="0" AngleX="0" />
+                    <RotateTransform Angle="0" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+    </Grid>
 </Window>

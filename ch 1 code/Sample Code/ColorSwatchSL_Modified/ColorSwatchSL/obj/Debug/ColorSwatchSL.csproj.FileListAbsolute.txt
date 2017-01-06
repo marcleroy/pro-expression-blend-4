@@ -18,3 +18,37 @@ F:\My Books\Blend Book\Chapter 1\Sample Code\ColorSwatchSL_Modified\ColorSwatchS
 F:\My Books\Blend Book\Chapter 1\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\XapCacheFile.xml
 F:\My Books\Blend Book\Chapter 1\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Microsoft.Expression.Drawing.dll
 F:\My Books\Blend Book\Chapter 1\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Microsoft.Expression.Drawing.xml
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ColorSwatchSL.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ColorSwatchSL.pdb
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\AppManifest.xaml
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ColorSwatchSL.xap
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Default.html
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Microsoft.Expression.Drawing.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Microsoft.Expression.Effects.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\Microsoft.Expression.Interactions.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\System.Windows.Interactivity.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\de\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\es\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\fr\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\it\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ja\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ko\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\ru\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\zh-Hans\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\bin\Debug\zh-Hant\Microsoft.Expression.Effects.resources.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\ColorSwatchSL.csprojResolveAssemblyReference.cache
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\App.g.cs
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\MainControl.g.cs
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\ColorSwatchSL.g.resources
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\ColorSwatchSL.dll
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\ColorSwatchSL.pdb
+Z:\Documents\GitHub\Win10\pro-expression-blend-4\ch 1 code\Sample Code\ColorSwatchSL_Modified\ColorSwatchSL\obj\Debug\XapCacheFile.xml

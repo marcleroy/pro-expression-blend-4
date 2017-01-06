@@ -4,7 +4,21 @@
 	<RadialGradientBrush x:Key="myBrush" GradientOrigin="0.534,0.305">
 		<GradientStop Color="#FFE2DADA" Offset="0"/>
 		<GradientStop Color="#FFE55959" Offset="1"/>
-		<GradientStop Color="#FF197465" Offset="0.52"/>
+		<GradientStop Color="#FFF7B75B" Offset="0.52"/>
 	</RadialGradientBrush>
-	<!-- Resource dictionary entries should be defined here. -->
+    <LinearGradientBrush x:Key="BackMenuBrush" EndPoint="1.034,0.636" MappingMode="RelativeToBoundingBox" StartPoint="0.083,0.605">
+        <LinearGradientBrush.RelativeTransform>
+            <TransformGroup>
+                <ScaleTransform CenterY="0.5" CenterX="0.5" />
+                <SkewTransform CenterY="0.5" CenterX="0.5" />
+                <RotateTransform CenterY="0.5" CenterX="0.5" />
+                <TranslateTransform />
+            </TransformGroup>
+        </LinearGradientBrush.RelativeTransform>
+        <GradientStop Color="#FFE2DADA" Offset="0.041" />
+        <GradientStop Color="#FF551111" Offset="0.986" />
+        <GradientStop Color="#FF4B2057" Offset="0.718" />
+        <GradientStop Color="#FFAFACCB" Offset="0.283" />
+    </LinearGradientBrush>
+    <!-- Resource dictionary entries should be defined here. -->
 </ResourceDictionary>

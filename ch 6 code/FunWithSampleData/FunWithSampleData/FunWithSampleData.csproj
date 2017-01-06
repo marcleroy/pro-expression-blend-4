@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{a00710d8-c452-460a-ad56-df1c032e0d79}</ProjectGuid>
+    <ProjectGuid>{A00710D8-C452-460A-AD56-DF1C032E0D79}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <DefaultClrNameSpace>FunWithSampleData</DefaultClrNameSpace>
@@ -59,6 +59,12 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SampleData\SampleWorkDataSource\SampleWorkDataSource.xaml.cs">
+      <DependentUpon>SampleWorkDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WorkWindow.xaml.cs">
+      <DependentUpon>WorkWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +81,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SampleData\SampleWorkDataSource\SampleWorkDataSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -85,6 +99,7 @@
       <Visible>false</Visible>
     </None>
     <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
+    <None Include="SampleData\SampleWorkDataSource\SampleWorkDataSource.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
@@ -92,6 +107,321 @@
     <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
     <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
     <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\image01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\image02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\image03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\image04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\image05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_add_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_add_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_add_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_Cancel_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_Cancel_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_Cancel_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_create_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\action_create_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\active_x_32xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\AddressEnvelope_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\AddressEnvelope_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\AddressEnvelope_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\airbrush_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\airbrush_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\airbrush_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\animation_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\animation_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\animation_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\application_32xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_back_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_back_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_back_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Down_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Down_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Down_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Dynamic16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Dynamic16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Dynamic16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Forward_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Forward_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Forward_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_merge_32xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xMD_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Next_16xSM_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_open_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_open_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_open_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_previous_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Previous_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_previous_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Previous_16xMD_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Previous_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Previous_16xSM_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xMD_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_RedoRetry_16xSM_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Reorder_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Reorder_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Reorder_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Sync_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Sync_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Sync_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xLG_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xMD_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Arrow_UndoRevertRestore_16xSM_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Up_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Up_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\arrow_Up_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\ASCube_32xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_32xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_32xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Binary_32xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Bolt_16xLG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Bolt_16xMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\Bolt_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\bookmark_001_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SampleData\SampleWorkDataSource\SampleWorkDataSource_Files\bookmark_002_16xMD.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

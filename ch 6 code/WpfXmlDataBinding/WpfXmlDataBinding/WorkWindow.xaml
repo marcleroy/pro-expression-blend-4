@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfXmlDataBinding.WorkWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:WpfXmlDataBinding" mc:Ignorable="d" Title="WorkWindow" Height="439" Width="681">
+    <Window.Resources>
+        <XmlDataProvider x:Key="InventoryDataSource" Source="/WpfXmlDataBinding;component/Inventory.xml" d:IsDataSource="True" />
+        <DataTemplate x:Key="ProductTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding XPath=@ProductID}" />
+                <TextBlock Text="{Binding XPath=Cost}" />
+                <TextBlock Text="{Binding XPath=Description}" />
+                <CheckBox IsChecked="{Binding XPath=HotItem}" />
+                <TextBlock Text="{Binding XPath=Name}" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid DataContext="{Binding Source={StaticResource InventoryDataSource}}" d:DataContext="{Binding Source={StaticResource InventoryDataSource}, XPath=/Inventory/Product}">
+        <ListBox x:Name="listBox" ItemTemplate="{DynamicResource ProductTemplate}" ItemsSource="{Binding XPath=/Inventory/Product}" Margin="10,10,0,49" HorizontalAlignment="Left" Width="235" />
+        <Grid Margin="272.5,14,77.5,0" d:DataContext="{Binding Source={StaticResource InventoryDataSource}, XPath=/Inventory}" Height="164" VerticalAlignment="Top">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Text="Cost" FontWeight="Bold" />
+            <TextBlock Text="{Binding XPath=/Inventory/Product/Cost}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="104,0,0,0" />
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,35.92,0,0" Text="Description" FontWeight="Bold" />
+            <TextBlock Text="{Binding XPath=/Inventory/Product/Description}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="104,19.96,0,0" />
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,71.84,0,0" Text="HotItem" FontWeight="Bold" />
+            <CheckBox IsChecked="{Binding XPath=/Inventory/Product/HotItem}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="104,72.27,0,0" />
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,91.8,0,0" Text="Name" FontWeight="Bold" />
+            <TextBlock Text="{Binding XPath=/Inventory/Product/Name}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="104,91.8,0,0" />
+        </Grid>
+
+    </Grid>
+</Window>

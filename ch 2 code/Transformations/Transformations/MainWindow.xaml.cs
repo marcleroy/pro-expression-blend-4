@@ -38,5 +38,10 @@ namespace Transformations
 		{
 			myShape.LayoutTransform  = new SkewTransform(40, -20);
 		}
-	}
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            myShape.LayoutTransform = null;
+        }
+    }
 }

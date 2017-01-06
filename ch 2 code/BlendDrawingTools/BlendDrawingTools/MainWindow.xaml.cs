@@ -35,5 +35,15 @@ namespace BlendDrawingTools
 			// Reset.
 			((UIElement)sender).Opacity = 1;
 		}
-	}
+
+        private void Path_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ((UIElement)sender).Opacity = .5;
+        }
+
+        private void Path_MouseLeave(object sender, MouseEventArgs e)
+        {
+            ((UIElement)sender).Opacity = 1;
+        }
+    }
 }
